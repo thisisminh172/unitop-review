@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài tập xây dựng layout web 2 cột</title>
+  </head>
+
+  <body>
+    <style>
+      #wrapper {
+        width: 960px;
+        margin: 0px auto;
+      }
+
+      #content {
+        width: 600px;
+        min-height: 450px;
+      }
+
+      #sidebar {
+        width: 360px;
+        min-height: 450px;
+      }
+
+      p {
+        display: inline-block;
+        /* margin-bottom: 0px; */
+      }
+
+      /*---------position text-------*/
+      .text-center {
+        text-align: center;
+      }
+
+      .pd-tb-15 {
+        padding: 15px 0px 15px;
+      }
+
+      .pd-tb-10 {
+        padding: 10px 0px 10px;
+      }
+
+      .pd-l-15 {
+        padding-left: 15px;
+      }
+
+      /*--------class float----------*/
+      .float-left {
+        float: left;
+      }
+
+      /*-------class màu bg---------*/
+      .bg-green {
+        background-color: green;
+      }
+
+      .bg-f3 {
+        background-color: #f3f3f3;
+      }
+
+      .bg-e1 {
+        background-color: #e1e1e1;
+      }
+
+      /*-------color text---------*/
+      .color-white {
+        color: white;
+      }
+
+      /*Class chống sập độ cao của layout*/
+      .clearfix {
+        clear: both;
+        display: block;
+      }
+
+      /* .clearfix:after {
+            content: ".";
+            display: block;
+            clear: both;
+            visibility: hidden;
+            line-height: 0;
+            height: 0;
+        } */
+    </style>
+    <div id="wrapper">
+      <header class="bg-green text-center">
+        <p class="pd-tb-15 color-white clearfix">
+          Layout web 2 cột - Float Css
+        </p>
+      </header>
+      <div id="wr-content">
+        <div id="content" class="bg-f3 float-left">
+          <p class="pd-l-15">Content</p>
+        </div>
+        <div id="sidebar" class="bg-e1 float-left">
+          <p class="pd-l-15">Sidebar</p>
+        </div>
+      </div>
+      <footer class="bg-green text-center">
+        <p class="pd-tb-10 color-white clearfix">Nguyễn Quỳnh Anh</p>
+      </footer>
+    </div>
+    <div>
+      <h1>list p</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci,
+        incidunt!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci,
+        incidunt!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci,
+        incidunt!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci,
+        incidunt!
+      </p>
+    </div>
+  </body>
+</html>

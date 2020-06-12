@@ -1,0 +1,15 @@
+body{
+    width:960px;
+    margin: 0px auto;
+}
+#header, #footer{
+    background: cornflowerblue;
+    text-align: center;
+}
+#content{
+    min-height: 870px;
+}
+#footer{
+    font-size: 20px;
+    padding: 9px 0px;
+}

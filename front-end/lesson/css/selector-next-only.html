@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector next only</title>
+</head>
+
+<body>
+    <style>
+        article img {
+            max-width: 500px;
+            height: auto;
+        }
+
+        article img+p {
+            font-style: italic;
+            color: blue;
+        }
+    </style>
+    <hr>
+    <article>
+        <h1>Selector next only</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi neque deleniti reprehenderit quod voluptatem
+            maiores dolorem asperiores consectetur id iure?</p>
+        <img src="images/corona.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, voluptates. Debitis dolores qui
+            exercitationem asperiores expedita numquam soluta nemo eligendi!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, quisquam? Beatae dolore illum eum non iusto
+            dicta. Labore sit natus non reiciendis cumque dolorum vel voluptate asperiores necessitatibus, et ullam?</p>
+    </article>
+</body>
+
+</html>

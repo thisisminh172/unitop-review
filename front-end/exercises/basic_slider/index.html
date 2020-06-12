@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BASIC SLIDER PRODUCT</title>
+    <script src="js/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        #wrapper {
+            width: 960px;
+            margin: 0px auto;
+        }
+        #main_product{
+            margin:30px 0px;
+        }
+        h1 {
+            color: #34495e;
+        }
+
+        #main_product {
+            max-width: 350px;
+            max-height: 350px;
+        }
+        #container{
+            width: 350px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .box_shadow{
+            box-shadow: 1px 2px 0px #333;
+        }
+        .sub_product {
+            width: 80px;
+            height: 80px;
+        }
+        .active{
+            border: 1px solid #333;
+        }
+    </style>
+    <script>
+        //css('box-shadow','1px 2px 0px #333')
+        $(document).ready(function(){
+            $('#main_product #here').attr('src','image/pic-1.png').css({width:'350px',height:'350px'});
+            $('.sub_product img').click(function(){
+                var pic = $(this).attr('src');
+                $('#main_product #here').attr('src',pic).css({width:'350px',height:'350px',});
+                $('.sub_product img').removeClass('active');
+                $(this).addClass('active');
+            });
+
+        });
+    </script>
+    <div id="wrapper">
+        <h1>Basic Slider Product</h1>
+
+        <div id="main_product"><img src="" alt="" id="here"></div>
+        <div id="container">
+            <div class="sub_product" id="sub_product_1">
+                <img src="image/pic-1.png" alt="">
+            </div>
+            <div class="sub_product" id="sub_product_2">
+                <img src="image/pic-2.png" alt="">
+            </div>
+            <div class="sub_product" id="sub_product_3">
+                <img src="image/pic-3.png" alt="">
+            </div>
+            <div class="sub_product" id="sub_product_4">
+                <img src="image/pic-4.png" alt="">
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

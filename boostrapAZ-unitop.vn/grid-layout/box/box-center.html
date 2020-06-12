@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+
+    <title>Canh giữa khối</title>
+  </head>
+  <body>
+      <style>
+          .type-1 .box-child{
+              height: 100px;
+              width: 100px;
+          }
+      </style>
+      <div class="container">
+          <div class="row">
+              <div class="col-md-12">
+                <h1 class="text-center">Canh giữa khối</h1>
+                <h2>Cách 1</h2>
+                <div class="box-parent bg-secondary type-1">
+                    <div class="box-child bg-success mx-auto text-center">box child Lorem ipsum dolor sit amet.</div>
+                </div>
+
+                <h2>Cách 1</h2>
+                <div class="box-parent bg-secondary text-center type-2">
+                    <div class="box-child bg-success d-inline-block">box child Lorem ipsum dolor sit amet.</div>
+                </div>
+              </div>
+          </div>
+      </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

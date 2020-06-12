@@ -1,0 +1,5 @@
+.style-grid [class^="col"]{
+    background: rgb(255, 195, 195);
+    border: 1px solid rgb(121, 121, 121);
+    min-height: 50px;
+}

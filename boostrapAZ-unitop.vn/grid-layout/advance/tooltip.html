@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+
+    <title>Tooltip trong bootstrap</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-center">Tooltip trong bootstrap</h1>
+                <button class="btn btn-danger mb-3" data-toggle="tooltip" title="Đăng ký để nhận ưu đãi">Đăng ký</button>
+                <form action="">
+                    Username: <input type="text" class="form-control mb-3" name="" id="" title="username nhập it nhất  6 kí tự viết liền không dấu" data-toggle="tooltip">
+                </form>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est sunt ut esse itaque quidem animi,
+                    nostrum consequuntur provident. Voluptates iusto distinctio amet sint asperiores deleniti veritatis
+                    sed ex necessitatibus. Repellat blanditiis, dolores porro nobis ducimus esse aliquam maiores animi.
+                    Impedit at quibusdam velit asperiores vel itaque, commodi quo placeat minus voluptatem harum fuga
+                    neque mollitia quidem earum, voluptates provident optio repellat. Voluptatem soluta odit, ut ipsam
+                    reprehenderit impedit est perspiciatis dolorem culpa. Perferendis sit eius cupiditate officiis
+                    eligendi aperiam nostrum vel adipisci a quibusdam ex voluptatem tenetur tempora totam et deleniti ut
+                    atque, itaque aliquid. Impedit vitae facilis placeat repudiandae?</p>
+                <p>Lorem ipsum dolor sit amet <a href="" data-toggle="tooltip"
+                        title="tooltip for a Lorem tempora totam et deleniti">Lorem, ipsum
+                        dolor.</a>, consectetur adipisicing elit. At, sit?</p>
+                <p>Lorem ipsum dolor sit amet <a href="" data-toggle="tooltip"
+                        title="<strong>tooltip for </strong> a Lorem tempora totam et deleniti">Lorem, ipsum
+                        dolor.</a>, consectetur adipisicing elit. At, sit?</p>
+                <p>Lorem ipsum dolor sit amet <a href="" data-toggle="tooltip"
+                        title="<i>tooltip for a Lorem</i> tempora totam et deleniti">Lorem, ipsum
+                        dolor.</a>, consectetur adipisicing elit. At, sit?</p>
+                <p>Lorem ipsum dolor sit amet <a href="" data-toggle="tooltip"
+                        title="tooltip for a Lorem tempora totam et deleniti">Lorem, ipsum
+                        dolor.</a>, consectetur adipisicing elit. At, sit?</p>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.4.1.slim.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip({
+                placement: 'right',
+                trigger: 'hover focus',
+                html:true
+            });
+        });
+    </script>
+    <script src="js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>

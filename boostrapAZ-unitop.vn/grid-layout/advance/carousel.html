@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+
+    <title>carousel slide show</title>
+  </head>
+  <body>
+      <style>
+          #home-slide .carousel-indicators li{
+              background-color: chartreuse;
+          }
+      </style>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h1 class="text-center">carousel slode show trong bootstrap</h1>
+
+                <div id="home-slide" class="carousel slide carousel-fade">
+                    <!-- vị tri của indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#home-slide" class="active" data-slide-to="0"></li>
+                        <li data-target="#home-slide" data-slide-to="1"></li>
+                        <li data-target="#home-slide" data-slide-to="2"></li>
+                        <li data-target="#home-slide" data-slide-to="3"></li>
+                        <li data-target="#home-slide" data-slide-to="4"></li>
+                    </ol>
+                    <!-- end indicator -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/number-1.jpg" alt="" class="d-block h-50 w-100">
+                            <div class="carousel-caption">
+                                <h5>Caption 1</h5>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/number-2.jpg" alt="" class="d-block w-100">
+                            <div class="carousel-caption">
+                                <h5>Caption 2</h5>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/number-3.jpg" alt="" class="d-block w-100">
+                            <div class="carousel-caption">
+                                <h5>Caption 3</h5>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/number-4.jpg" alt="" class="d-block w-100">
+                            <div class="carousel-caption">
+                                <h5>Caption 4</h5>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/number-5.jpg" alt="" class="d-block w-100">
+                            <div class="carousel-caption">
+                                <h5>Caption 5</h5>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end carousel-inner -->
+                <a href="#home-slide" class="carousel-control-prev" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a href="#home-slide" class="carousel-control-next" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+                <!-- end control next prev -->
+
+                
+
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.4.1.slim.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#home-slide").carousel({
+                interval: 4000,
+                ride: "carousel"
+            });
+        });
+    </script>
+    <script src="js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

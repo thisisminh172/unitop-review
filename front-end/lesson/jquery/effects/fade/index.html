@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fade</title>
+    <script src="js/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+
+    <style>
+        #box {
+            padding: 40px;
+            width: 300px;
+            height: 200px;
+            background: #f1c40f;
+            text-align: center;
+            color: #fff;
+            display: none;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $('#effect-fade-in').click(function(){
+                $('#box').fadeIn(1000);
+            });
+            $('#effect-fade-out').click(function(){
+                $('#box').fadeOut(1000);
+            });
+            $('#effect-fade-toggle').click(function(){
+                $('#box').fadeToggle(1000);
+            });
+
+        });
+    </script>
+
+    <h1>Hiệu ứng show và hide trong jquery</h1>
+    <a href="#" id="effect-fade-in">fade in</a>
+    <a href="#" id="effect-fade-out">fade out</a>
+    <a href="#" id="effect-fade-toggle">toggle</a>
+    <div id="box">
+        BOX
+    </div>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint obcaecati iure dolores sed optio a quibusdam nisi
+        modi possimus minus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias ut adipisci voluptatum
+        rem, soluta dicta est voluptates, aperiam repudiandae odit maiores quia ipsam tempore praesentium facere
+        voluptatibus dolorum qui ex, maxime harum. Assumenda cum maiores quis fugit architecto! Ex molestias aliquam
+        aperiam consequatur ratione dignissimos vel debitis hic? Voluptatum, nobis.</p>
+
+</body>
+
+</html>

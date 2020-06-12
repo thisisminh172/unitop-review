@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector con cháu hậu duệ</title>
+</head>
+
+<body>
+    <style>
+        ul#main-menu a{
+            color: brown;
+            font-size: 30px;
+        }
+        ul#main-menu ul.sub-menu a {
+            color: blue;
+        }
+    </style>
+    <ul id="main-menu">
+        <li><a href="">trang chu</a></li>
+        <li><a href="">trang chu</a></li>
+        <li><a href="">trang chu</a>
+            <ul class="sub-menu">
+                <li><a href="">menu</a></li>
+                <li><a href="">menu</a></li>
+            </ul>
+        </li>
+        <li><a href="">trang chu</a></li>
+    </ul>
+</body>
+
+</html>

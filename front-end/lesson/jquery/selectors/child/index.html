@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector child</title>
+    <script src="js/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+    <script>
+        $(document).ready(function(){
+            //1. làm bài viết đầu tiên màu đỏ
+            $("ul.list-post :first-child").css('color','red');
+            //2. làm bài viết cuối cùng màu blue
+            $("ul.list-post :last-child").css('color','blue');
+            //3. tìm nth-child(index, odd, even, operation)
+            $("ul.list-post :nth-child(2)").css('color','blue');
+            //4. chọn những phần tử có dạng 3n (chia hết cho 3)
+            $("ul.list-post :nth-child(3n)").css('color','blue');
+            //5. Chọn only-child con duy nhất của phần tử cha được chỉ định
+            $("ul.list-post li:only-child").css('color','yellowgreen');
+            //vỉ thằng list-post thứ 2 có 1 con
+
+
+            
+        });
+    </script>
+    <ul class="list-post">
+        <li>Bài viết 1</li>
+        <a href="">linkkkk</a>
+        <li>Bài viết 2</li>
+        <li>Bài viết 3</li>
+        <li>Bài viết 4</li>
+        <li>Bài viết 5</li>
+        <li>Bài viết 6</li>
+        <li>Bài viết 7</li>
+        <li>Bài viết 8</li>
+        <li>Bài viết 9</li>
+        <li>Bài viết 5</li>
+        <li>Bài viết 6</li>
+    </ul>
+    <ul class="list-post">
+        <li>Bài viết 1</li>
+    </ul>
+</body>
+</html>

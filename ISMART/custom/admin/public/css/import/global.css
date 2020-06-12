@@ -1,0 +1,132 @@
+/* ================================================================ */
+/* ================================================================ */
+/* ================================================================ */
+/* This global CSS will use for header, sidebar and footer */
+/* Don't use this file for other pages design */
+/* ================================================================ */
+/* ================================================================ */
+/* ================================================================ */
+* {
+  padding: 0px;
+  margin: 0px;
+}
+#wrapper {
+  background-color: w#fff;
+}
+/* ============================== */
+/* header */
+/* ============================== */
+#header {
+  background-color: #2c3e50;
+}
+#logo {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 50px;
+  margin-left: 30px;
+}
+#account {
+  float: right;
+  margin: 15px 15px 0px 0px;
+}
+/* ============================== */
+/* content */
+/* ============================== */
+#content {
+  position: relative;
+  min-height: 750px;
+}
+/* ============================== */
+/* sidebar */
+/* ============================== */
+#sidebar {
+  width: 10%;
+  background-color: #34495e;
+  color: #fff;
+  float: left;
+  height: 100%;
+  position: absolute;
+}
+#content > #sidebar > #nav > ul > li {
+  margin: 0px auto;
+  padding: 1rem;
+}
+#content > #sidebar > #nav > ul > li:hover {
+  background-color: #2c3e50;
+  transition: 0.3s;
+}
+#content > #sidebar > #nav > ul > li > a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+/* ============================== */
+/* container */
+/* ============================== */
+#container {
+  width: 90%;
+  float: right;
+}
+/* ============================== */
+/* footer */
+/* ============================== */
+#footer {
+  background-color: #2c3e50;
+  padding: 1rem;
+}
+#footer p {
+  margin: 0px;
+}
+/* ============================== */
+/* clearfix */
+/* ============================== */
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+  visibility: hidden;
+}
+
+/* ============================== */
+/* text decoration */
+/* ============================== */
+.text-red {
+  color: red;
+}
+.text-white {
+  color: #fff;
+}
+.text-center {
+  text-align: center;
+}
+/* ============================== */
+/* dropdown-menu */
+/* ============================== */
+.dropdown {
+  position: relative;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  width: 170px;
+  top: 0;
+  right: -170px;
+  background-color: #34495e;
+}
+.dropdown-content ul {
+  list-style: none;
+}
+.dropdown-content a {
+  display: block;
+  color: #fff;
+  padding: 1rem;
+  text-decoration: none;
+}
+.dropdown-content a:hover {
+  background-color: #2c3e50;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+  background-color: #34495e;
+  transition: 0.3s;
+}

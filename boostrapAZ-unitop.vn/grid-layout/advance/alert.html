@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+
+    <title>Cảnh báo Alert trong bootstrap</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Cảnh báo Alert trong bootstrap</h1>
+                <h3>Ẩn alert</h3>
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    bạn đã thêm bài viết thành công, bạn click <a href="" class="alert-link"> vào đây</a> để về trang
+                    chủ
+                    <button type="button" class="close" data-dismiss="alert" aria-label="close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <h3>Alert đa nội dung</h3>
+                <div id="myAlert" class="alert alert-danger alert-dismissible fade show" role="alert">
+                    <h3 class="alert-heading">Thông báo</h3>
+                    bạn đã thêm bài viết thành công, bạn click <a href="" class="alert-link"> vào đây</a> để về trang
+                    chủ
+                    <p>Lorem ipsum dolor sit, <strong>UNITOP.VN</strong> amet consectetur adipisicing elit. Blanditiis, impedit vitae doloribus nam
+                        placeat voluptatum quos deleniti soluta repudiandae, adipisci dolore reiciendis aut
+                        exercitationem aliquam minus saepe culpa asperiores recusandae!</p>
+                    <hr>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis, impedit vitae doloribus nam
+                        placeat voluptatum quos deleniti soluta repudiandae, adipisci dolore reiciendis aut
+                        exercitationem aliquam minus saepe culpa asperiores recusandae!</p>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+
+                </div>
+                <h3>Alert link</h3>
+                <div class="alert alert-danger" role="alert">
+                    bạn đã thêm bài viết thành công, bạn click <a href="" class="alert-link"> vào đây</a> để về trang
+                    chủ
+                </div>
+                <div class="alert alert-warning" role="alert">
+                    bạn đã thêm bài viết thành công, bạn click <a href="" class="alert-link"> vào đây</a> để về trang
+                    chủ
+                </div>
+                <h3>alert background</h3>
+                <div class="alert alert-primary" role="alert">
+                    Cảnh báo đơn giản trong hệ thống
+                </div>
+                <div class="alert alert-danger" role="alert">
+                    Cảnh báo đơn giản trong hệ thống
+                </div>
+                <div class="alert alert-warning" role="alert">
+                    Cảnh báo đơn giản trong hệ thống
+                </div>
+                <div class="alert alert-secondary" role="alert">
+                    Cảnh báo đơn giản trong hệ thống
+                </div>
+                <div class="alert alert-dark" role="alert">
+                    Cảnh báo đơn giản trong hệ thống
+                </div>
+                <div class="alert alert-light" role="alert">
+                    Cảnh báo đơn giản trong hệ thống
+                </div>
+                <h3>Cấu trúc của alert</h3>
+                <div class="alert alert-success" role="alert">
+                    Cảnh báo đơn giản trong hệ thống
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.4.1.slim.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#myAlert").on('closed.bs.alert',function(){
+                alert("closed");
+            });
+            // $("#myAlert").on('close.bs.alert',function(){
+            //     alert("close");
+            // });
+        });
+    </script>
+    <script src="js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>

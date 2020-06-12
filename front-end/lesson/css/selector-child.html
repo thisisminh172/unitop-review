@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>child selector</title>
+</head>
+
+<body>
+    <style>
+        ul li:first-child{
+            font-weight: bold;
+            color: red;
+        }
+        ul li:last-child{
+            color: green;
+        }
+        ul li:nth-child(3){
+            color: rgb(255, 0, 128);
+        }
+        ol li:nth-child(even){
+            color: rgb(179, 78, 252);
+        }
+    </style>
+    <h1>child selector</h1>
+    <hr>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2
+            <ul>
+                <li>Item 2.1</li>
+                <li>Item 2.2</li>
+                <li>Item 2.3</li>
+                <li>Item 2.4</li>
+            </ul>
+        </li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ul>
+    <ol>
+        <li>Item </li>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+    </ol>
+</body>
+
+</html>

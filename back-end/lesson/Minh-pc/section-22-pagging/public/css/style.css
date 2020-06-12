@@ -1,0 +1,128 @@
+body {
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 23px;
+}
+#wrapper {
+  width: 960px;
+  margin: 0px auto;
+}
+#header,
+#footer {
+  background: rgb(35, 71, 85);
+}
+ul#main_menu {
+  text-align: center;
+  margin: 0px;
+}
+ul#main_menu li {
+  display: inline-block;
+}
+ul#main_menu li a {
+  padding: 8px 15px;
+  color: #fff;
+  display: block;
+}
+
+/*Multi template*/
+.mod-page {
+  background: orange;
+}
+.mod-product {
+  background: black;
+}
+
+#content {
+  min-height: 810px;
+  padding: 20px 0px;
+}
+#footer {
+  color: #fff;
+  text-align: center;
+  padding: 8px 0px;
+}
+ul.list-post li a.post-title {
+  font-weight: bold;
+  font-size: 14px;
+}
+ul.list-post li {
+  margin-bottom: 20px;
+  padding: 20px 0px;
+  border-bottom: 1px dashed rgb(48, 48, 48);
+}
+.add_new {
+  color: rgb(253, 136, 115);
+}
+.add_new:hover {
+  color: violet;
+  text-decoration: underline;
+}
+label,
+input {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 300px;
+  margin-bottom: 20px;
+}
+.error {
+  color: red;
+}
+.success {
+  color: rgb(16, 197, 40);
+}
+.table_data {
+  width: 100%;
+}
+.table_data thead tr td {
+  font-weight: bold;
+  border-bottom: 2px solid #333;
+}
+.table_data tr td {
+  border-bottom: 1px solid #333;
+  padding: 8px 15px;
+}
+.num_rows {
+  font-size: 12px;
+  font-style: italic;
+  margin-top: 20px;
+  float: left;
+}
+select {
+  display: block;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+  width: 300px;
+}
+input[type="submit"] {
+  background: orange;
+  display: block;
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  margin-bottom: 20px;
+  width: 300px;
+}
+
+/*Style pagging*/
+ul.pagging {
+  float: right;
+  list-style-type: none;
+  margin: 10px 5px;
+}
+ul.pagging li {
+  float: left;
+  padding: 0px 2px;
+}
+ul.pagging li a {
+  display: block;
+  padding: 5px 15px;
+  color: rgb(146, 146, 146);
+  border: 1px solid rgb(146, 146, 146);
+  text-decoration: none;
+}
+ul.pagging li.active a{
+  border: 1px solid rgb(110, 110, 216);
+  color: cornflowerblue;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector theo form</title>
+    <script src="js/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+    <style>
+        form * {
+            display: block;
+            margin-bottom: 20px;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            //1. đếm số input trong form
+            //var num = $("form :input").length;
+            //2. Input text => background red
+            //$("form :text").css('border', '1px solid red');
+            //3. Input password => background red
+            //$("form :password").css('border', '1px solid red');
+            //4. đếm số lượng select
+            // var input_select_selected = $("form :selected");
+            // input_select_selected.each(function(){
+            //     alert($(this).text());
+            // });
+            //5. 
+            // var input_checked = $("form :checkbox:checked");
+            //  input_checked.each(function(){
+            //     alert($(this).val());
+            // });
+            $("form :disabled").css('border','1px solid #f00');
+            $("form :enabled").css('border','1px solid green');
+
+
+            
+        });
+    </script>
+    <form action="">
+        <input type="text" name="" id="">
+        <input type="password" disabled name="" id="">
+        <input type="checkbox" name="hobby" class="hobby" id="" checked="checked" value="game">
+        <input type="checkbox" name="hobby" class="hobby" id="" checked="checked" value="shopping">
+        <input type="checkbox" name="hobby" class="hobby" id="" value="reading">
+
+
+        <input type="radio" name="" id="">
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <button>Nút bấm</button>
+        <input type="submit" value="submit">
+        <input type="file" name="" id="">
+        <select name="" id="">
+            <option value="">lựa chọn</option>
+            <option value="">Php</option>
+            <option value="" selected="selected">Jquery</option>
+        </select>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector theo loại</title>
+    <script src="js/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+    <script>
+        $(document).ready(function () {
+            //1. làm cho thẻ a đầu tiên màu đỏ
+            $('.box a:first-of-type').css('color','red');
+
+            //2. làm cho thẻ p cuối cùng màu xanh
+            $(".box p:last-of-type").css('color','blue');
+
+            //3. only-of-type
+            $(".box h2:only-of-type").css('color','red');
+        });
+    </script>
+    <div class="box">
+        <a href="">Link 1</a>
+        <p>văn bản 1</p>
+        <h2>tiêu đề 1</h2>
+
+        <a href="">Link 2</a>
+        <p>văn bản 2</p>
+        <h2>tiêu đề 2</h2>
+
+        <a href="">Link 3</a>
+        <p>văn bản 3</p>
+        <a href="">Link 4</a>
+        <h2>tiêu đề 3</h2>
+    </div>
+    <div class="box">
+        <h2>tiêu đề 4</h2>
+    </div>
+</body>
+
+</html>

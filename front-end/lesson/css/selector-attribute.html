@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector attribute</title>
+</head>
+<body>
+    <style>
+        a[href]{
+            color: cyan;
+        }
+        a[href$="vn"]{
+            color: brown;
+        }
+        a[href*="google"]{
+            color: brown;
+        }
+    </style>
+    <h1>attr selector</h1>
+    <a href="http://unitop.vn">php master</a><br>
+    <a href="http://google.com">Bootstrap AZ</a>
+</body>
+</html>

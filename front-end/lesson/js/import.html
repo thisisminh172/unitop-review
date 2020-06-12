@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Import javascript</title>
+    <script defer src="external.js"></script>
+</head>
+
+<body>
+    <script type="text/javascript">
+        function myFunction() {
+            document.write("click me!");
+        }
+        function total(a, b) {
+            alert(a + b);
+        }
+    </script>
+    <!-- inline javascript -->
+    <button onclick="myFunction();">Click Me</button><br>
+    <!--internal javascript-->
+    <button onclick="total(2,6)">internal total function</button><br>
+    <!--external javascript-->
+    <button id="external">external</button>
+</body>
+
+</html>

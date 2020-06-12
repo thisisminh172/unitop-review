@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector addon before after</title>
+</head>
+
+<body>
+    <style>
+        h2:before{
+            content: "✭";
+            color: gold;
+            background-color: gray;
+        }
+        h2::after{
+            content: "✭";
+        }
+        .list-post .new:after{
+            content: url(https://media1.giphy.com/media/hgCizrCvXk6Mo/giphy.gif);
+        }
+    </style>
+    <h1>selector addon before after</h1>
+    <hr>
+
+
+    <h2>before after selector</h2>
+    <ul class="list-post">
+        <li><a href="" class="new">bài viết số một</a></li>
+        <li><a href="" class="new">bài viết số một</a></li>
+        <li><a href="" class="">bài viết số một</a></li>
+        <li><a href="" class="new">bài viết số một</a></li>
+    </ul>
+</body>
+
+</html>

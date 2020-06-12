@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhúng facebook comment vào website</title>
+</head>
+
+<body>
+    <style>
+        .container {
+            max-width: 960px;
+            margin: 0px auto;
+            /* display: flex;
+            flex-direction: column; */
+        }
+
+        /*Fb Comments Width Fix*/
+        .fb_iframe_widget_fluid_desktop,
+        .fb_iframe_widget_fluid_desktop span,
+        .fb_iframe_widget_fluid_desktop iframe {
+            max-width: 100% !important;
+            width: 100% !important;
+        }
+    </style>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v6.0"></script>
+
+    <div class="container">
+        <h1>Nhúng fanpage vào website</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto totam non quidem, architecto mollitia
+            eligendi
+            blanditiis a accusantium expedita veniam atque perferendis, eos, earum ipsam! Recusandae ex explicabo sit,
+            natus, aliquam perspiciatis ipsam sint quis illum similique accusamus praesentium doloremque? Dignissimos,
+            nulla! Ducimus vero deserunt perferendis, cumque optio doloremque perspiciatis?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto totam non quidem, architecto mollitia
+            eligendi
+            blanditiis a accusantium expedita veniam atque perferendis, eos, earum ipsam! Recusandae ex explicabo sit,
+            natus, aliquam perspiciatis ipsam sint quis illum similique accusamus praesentium doloremque? Dignissimos,
+            nulla! Ducimus vero deserunt perferendis, cumque optio doloremque perspiciatis?</p>
+        <br>
+        <!-- comment facebook -->
+
+        <div class="fb-comments" data-href="http://unitop.vn/" data-width="100%" data-numposts="5"></div>
+        <br>
+        <div class="fb-page" data-href="https://www.facebook.com/officialfanpageapp/" data-tabs="" data-width=""
+            data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false"
+            data-show-facepile="true">
+            <blockquote cite="https://www.facebook.com/officialfanpageapp/" class="fb-xfbml-parse-ignore"><a
+                    href="https://www.facebook.com/officialfanpageapp/"></a></blockquote>
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>

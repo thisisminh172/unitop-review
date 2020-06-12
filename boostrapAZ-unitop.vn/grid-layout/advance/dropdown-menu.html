@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+
+    <title>dropdown menu</title>
+  </head>
+  <body>
+      <style>
+          #my-dropdown .dropdown-menu{
+              width: 300px;
+
+          }
+      </style>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>dropdown trong boostrap</h1>
+                <div class="dropdown float-right" id="my-dropdown">
+                    <button class="btn btn-danger dropdown-toggle" data-display="static" data-toggle="dropdown">AVATAR</button>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a href="" class="dropdown-item">Menu item 1</a>
+                        <a href="" class="dropdown-item">Menu item 2</a>
+                        <a href="" class="dropdown-item">Menu item 3</a>
+                        <div class="dropdown-divider"></div>
+                        <div class="dropdown-header">More menu</div>
+                        <a href="" class="dropdown-item">Menu item 4</a>
+                        <a href="" class="dropdown-item">Menu item 5</a>
+                        <p class="p-4 text-muted">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident ipsam hic nobis delectus, aut accusantium est quos esse consequuntur aliquam!</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.4.1.slim.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // $("#my-dropdown").on('show.bs.dropdown',function(){
+            //     alert("show");
+            // });
+            $("#my-dropdown").on('hide.bs.dropdown',function(){
+                alert("hide");
+            });
+        });
+    </script>
+    <script src="js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

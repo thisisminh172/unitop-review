@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>viết tắt flex</title>
+</head>
+
+<body>
+    <style>
+        .container {
+            background-color: khaki;
+            display: flex;
+            /* flex-wrap: wrap; */
+        }
+
+        .flex-item {
+            background-color: lightcoral;
+            padding: 30px;
+            width: 100px;
+            margin: 10px;
+            font-size: 18px;
+            text-align: center;
+            flex: 1 1 200px;
+        }
+
+    </style>
+    <div id="wrapper">
+        <h1>Display flex shorthand</h1>
+        <div class="container">
+            <div class="flex-item item-1">1</div>
+            <div class="flex-item item-2">2</div>
+
+        </div>
+    </div>
+</body>
+
+</html>

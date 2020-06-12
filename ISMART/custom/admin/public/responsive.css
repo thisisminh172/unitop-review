@@ -1,0 +1,28 @@
+/*PC-first*/
+/* IF THE SCREEN IS BIGGER THAN 1024px => Do not need query media */
+/* Big screen pc */
+@media screen and (max-width: 1920px){
+    
+}
+/*Ipad horizontal(1024 x 768)*/
+@media screen and (max-width: 1024px){
+    #wrapper{
+        width: 100%;
+    }
+}
+/*Ipad vertical (768 x 1024)*/
+@media screen and (max-width: 768px){
+    
+}
+/*Small tablet ~ large-screen smart phone (480 x 640)*/
+@media screen and (max-width: 480px){
+    
+}
+/*Iphone(480 x 640)*/
+@media screen and (max-width: 320px){
+    
+}
+/*Small smart phone*/
+@media screen and (max-width: 240px){
+    
+}

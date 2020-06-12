@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+
+    <title>Thiết lập kích thước khối trong bootstrap</title>
+  </head>
+  <body>
+      <style>
+          .box-parent{
+              height: 300px;
+          }
+      </style>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Thiết lập kích thước khối trong bootstrap</h1>
+                <h3>Thiết lập độ rộng khối</h3>
+                <div class="box-parent bg-secondary">
+                    <div class="box-child bg-success w-25">Box</div>
+                    <div class="box-child bg-success w-50">Box</div>
+                    <div class="box-child bg-success w-75">Box</div>
+                    <div class="box-child bg-success w-100">Box</div>
+                </div>
+
+                <h3>Thiết lập độ cao</h3>
+                <div class="box-parent bg-secondary">
+                    <div class="box-child bg-warning w-25 h-25 float-left">box</div>
+                    <div class="box-child bg-warning w-25 h-50 float-left">box</div>
+                    <div class="box-child bg-warning w-25 h-75 float-left">box</div>
+                    <div class="box-child bg-warning w-25 h-auto float-left">box</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

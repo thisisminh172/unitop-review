@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box clear</title>
+</head>
+
+<body>
+    <style>
+        /* .box-1 {
+            width: 300px;
+            height: 200px;
+            background: greenyellow;
+            float: left;
+        }
+
+        .box-2 {
+            width: 500px;
+            height: 200px;
+            background: blue;
+            clear: both;
+        } */
+
+        #wrapper {
+            width: 800px;
+            margin: 0px auto;
+        }
+
+        .post-title {
+            display: block;
+            margin-bottom: 20px;
+            text-decoration: none;
+        }
+
+        .post-thumb {
+            width: 200px;
+            display: block;
+            float: left;
+            padding-right: 15px;
+        }
+
+        .post-thumb img {
+            max-width: 100%;
+        }
+        .clear-both{
+            clear: both;
+        }
+    </style>
+    <div id="wrapper">
+        <!-- <h1>box clear</h1>
+        <hr>
+        <div class="box-1">
+            Box1
+        </div>
+        <div class="box-2">
+            Box2
+        </div> -->
+        <article>
+            <a href="" class="post-title">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, earum!</a>
+            <a href="" class="post-thumb">
+                <img src="images/yoda.jpeg" alt="">
+            </a>
+            <p class="post-desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora id provident non sunt dolorem aliquid
+                excepturi hic expedita cum error esse mollitia veritatis, fugit, earum vitae officia vel iste, quod
+                tenetur repudiandae necessitatibus ut. Minus quos quae in blanditiis laboriosam!
+            </p>
+        </article>
+        <div class="clear-both"></div>
+        <article>
+            <a href="" class="post-title">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, earum!</a>
+            <a href="" class="post-thumb">
+                <img src="images/yoda.jpeg" alt="">
+            </a>
+            <p class="post-desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora id provident non sunt dolorem aliquid
+                excepturi hic expedita cum error esse mollitia veritatis, fugit, earum vitae officia vel iste, quod
+                tenetur repudiandae necessitatibus ut. Minus quos quae in blanditiis laboriosam!
+            </p>
+        </article>
+        <div class="clear-both"></div>
+    </div>
+</body>
+
+</html>

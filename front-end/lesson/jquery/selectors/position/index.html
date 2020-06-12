@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector theo định vị</title>
+    <script src="js/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+
+    <script>
+        $(document).ready(function () {
+            //1. Chọn phần tử p có chỉ số 1 => red
+            //$('p:eq(1)').css('color', 'red');
+            //$('a:eq(1)').css('color', 'red');
+            //2. chọn phần tử p đầu tiên
+            //$("p:first").css('color', 'yellow');
+            //3. chọn phần tử p cuối cùng
+            //$("p:last").css('color', 'yellow');
+            //4. chọn phần tử p có chỉ số lớn hơn 1
+            //$("p:gt(1)").css('color', 'blue');
+            //5. chọn phần tử 2 trong box
+            //$('div.box p:eq(1)').css('color','red');
+            //6. chọn tất cả thẻ p ngoại trừ có chỉ số 2
+            $("p:not('p:eq(2)')").css('color', 'red');
+            //$("p:not('p.p2')").css('color', 'red'); //same above
+
+        });
+    </script>
+    <p>đọan văn 0</p>
+    <p>đoạn văn 1</p>
+    <p class="p2">đoạn văn 2</p>
+    <p>đoạn văn 3</p>
+    <p>đoạn văn 4</p>
+    <p>đoạn văn 5</p>
+    <p>đoạn văn 6</p>
+    <div class="box">
+        <p>đoạn văn 7</p>
+        <p>đoạn văn 8</p>
+        <p>đoạn văn 9</p>
+    </div>
+    <a href="">Link 1</a>
+    <a href="">Link 2</a>
+    <a href="">Link 3</a>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display block</title>
+</head>
+
+<body>
+    <style>
+        /* display block có chức năng chiếm hết độ rộng chứa nó */
+        #wrapper {
+            width: 960px;
+            margin: 0px auto;
+        }
+        .link-group a{
+            display: block;
+            background: red;
+            margin-bottom: 10px;
+            float: left;
+            padding: 5px 15px;
+            border-right: black 2px solid;
+            text-decoration: none;
+        }
+        .link-group a:hover{
+            background: rgb(255, 141, 141);
+        }
+    </style>
+    <div id="wrapper">
+        <h1>Display block</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis ad nisi eum voluptates quas iste eos,
+            perferendis facere architecto asperiores necessitatibus beatae, similique modi quia tempore officia aut
+            deserunt voluptatum porro numquam? Porro quidem cupiditate cum, iure magni eum repellendus aspernatur nulla
+            voluptatem nostrum eos ratione laborum pariatur minima earum repellat! Deleniti harum sequi, quas impedit
+            fugiat odio porro, recusandae eos dolore culpa ratione totam. Cupiditate quas molestias quasi quaerat velit
+            vel nobis dolore sapiente excepturi totam illum sequi nesciunt perspiciatis eos numquam id veritatis, illo
+            corporis! Illum cumque, dolorem culpa corporis rerum dolorum, architecto enim minus ad, libero modi?</p>
+        <div class="link-group">
+            <a href="">Link 1</a>
+            <a href="">Link 2</a>
+            <a href="">Link 3</a>
+            <a href="">Link 4</a>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

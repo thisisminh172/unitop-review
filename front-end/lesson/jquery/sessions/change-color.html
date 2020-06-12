@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change color</title>
+    <script src="js/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+    <script>
+        $(document).ready(function () {
+            $('button#text-red').click(function () {
+                $('p').css('color','red');
+            });
+            $('button#text-green').click(function () {
+                $('p').css('color','green');
+            });
+        });
+
+    </script>
+    <h1>Change color with Jquery</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus odio, tenetur facere illum sunt tempore nobis
+        suscipit perspiciatis ullam odit ipsa qui, consequatur illo similique incidunt, aperiam natus repudiandae amet
+        ipsam fuga id architecto laboriosam doloremque. Dolorem cumque impedit, sunt, fugiat delectus, doloribus
+        laudantium at iure vel eum molestias nam?</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At neque nostrum dicta quibusdam dolor molestias vero
+        saepe repellat quisquam consectetur?</p>
+
+    <button id="text-red">RED</button><br>
+    <button id="text-green">GREEN</button>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+
+/* pc-first */
+/*PC màn hình lớn*/
+@media screen and (max-width: 1920px){
+    body{
+        background: rgb(153, 0, 77);
+    }
+}
+/* nếu lớn hơn 1024px thì không cần @media */
+/*Ipad ngang(1024 x 768)*/
+@media screen and (max-width: 1024px){
+    body{
+        background: black;
+    }
+}
+/*Ipad dọc (768 x 1024)*/
+@media screen and (max-width: 768px){
+    body{
+        background: blue;
+    }
+}
+/*tablet nhỏ (480 x 640)*/
+@media screen and (max-width: 480px){
+    body{
+        background: gold;
+    }
+}
+/*Iphone(480 x 640)*/
+@media screen and (max-width: 320px){
+    body{
+        background: red;
+    }
+}
+/*Smart phone nhỏ*/
+@media screen and (max-width: 240px){
+    body{
+        background: hotpink;
+    }
+}

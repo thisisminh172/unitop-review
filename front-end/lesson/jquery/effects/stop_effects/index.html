@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide</title>
+    <script src="js/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+
+    <style>
+        #box {
+            padding: 40px;
+            width: 300px;
+            height: 200px;
+            background: #f1c40f;
+            text-align: center;
+            color: #fff;
+            display: none;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $('#effect-slide-up').click(function(){
+                $('#box').stop().slideUp(1000);
+            });
+            $('#effect-slide-down').click(function(){
+                $('#box').stop().slideDown(1000);
+            });
+            $('#effect-slide-toggle').click(function(){
+                $('#box').stop().slideToggle(1000);
+            });
+
+        });
+    </script>
+
+    <h1>Hiệu ứng slide trong jquery</h1>
+    <a href="#" id="effect-slide-up">slide up</a>
+    <a href="#" id="effect-slide-down">slide down</a>
+    <a href="#" id="effect-slide-toggle">slide toggle</a>
+    <div id="box">
+        BOX
+    </div>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint obcaecati iure dolores sed optio a quibusdam nisi
+        modi possimus minus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias ut adipisci voluptatum
+        rem, soluta dicta est voluptates, aperiam repudiandae odit maiores quia ipsam tempore praesentium facere
+        voluptatibus dolorum qui ex, maxime harum. Assumenda cum maiores quis fugit architecto! Ex molestias aliquam
+        aperiam consequatur ratione dignissimos vel debitis hic? Voluptatum, nobis.</p>
+
+</body>
+
+</html>
