@@ -1,17 +1,17 @@
 <?php
-$info = array(
-    1 => array(
-        'id' => 1000,
-        'fullname' => 'Lê Linh',
-        'email' => 'minh@gmail.com',
-    ),
-    2 => array(
-        'id' => 2068,
-        'fullname' => 'Quỳnh Nga',
-        'email' => 'nga@gmail.com',
-        'website' => 'unitop.vn',
-    ),
-);
+	$info = array(
+		1 => array(
+			'id' => 1000,
+			'fullname' => 'Lê Linh',
+			'email' => 'minh@gmail.com'
+		),
+		2 => array(
+			'id' => 2068,
+			'fullname' => 'Quỳnh Nga',
+			'email' => 'nga@gmail.com',
+			'website' => 'unitop.vn'
+		)
+	);
 ?>
 <html>
 
@@ -23,19 +23,19 @@ $info = array(
     <table border="1">
         <thead>
             <tr>
-                <td align="center" width="50">stt</td>
-                <td align="center" width="50">ID</td>
-                <td align="center" width="250">Họ và tên</td>
-                <td align="center" width="250">email</td>
+                <th align="center" width="50">stt</th>
+                <th align="center" width="50">ID</th>
+                <th align="center" width="250">Họ và tên</th>
+                <th align="center" width="250">email</th>
             </tr>
         </thead>
         <tbody>
             <?php
-if (!empty($info)) {
-    $count = 0;
-    foreach ($info as $user) {
-        $count++;
-        ?>
+            	if (!empty($info)) {
+            		$count = 0;
+            		foreach ($info as $user) {
+            			$count++;
+            		?>
             <tr>
                 <td align="center"><?php echo $count; ?></td>
                 <td align="center"><?php echo $user['id']; ?></td>
@@ -44,9 +44,9 @@ if (!empty($info)) {
             </tr>
             <?php
 
-    }
-}
-?>
+            		}
+            	}
+            ?>
         </tbody>
     </table>
 </body>
