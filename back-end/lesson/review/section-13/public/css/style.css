@@ -1,0 +1,36 @@
+body {
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 23px;
+}
+
+#wrapper {
+    width: 960px;
+    margin: 0px auto;
+}
+
+#header,
+#footer {
+    background-color: #0066ff;
+    color: #fff;
+    text-align: center;
+}
+
+ul#main-menu {
+    text-align: center;
+}
+
+ul#main-menu li {
+    display: inline-block;
+}
+
+ul#main-menu li a {
+    padding: 8px 15px;
+    color: #fff;
+    display: block;
+}
+
+#content {
+    min-height: 600px;
+    padding: 20px 0px;
+}
